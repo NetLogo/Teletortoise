@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# General
+GET        /                                   controllers.Application.index
+GET        /model/list.json                    controllers.Application.modelList
+
+# Remote (Teletortoise)
+GET        /remote                             controllers.remote.Remote.index
+GET        /client                             controllers.remote.Remote.client(username: Option[String] ?= None)
+GET        /embedded                           controllers.remote.Remote.embedded
+GET        /connect                            controllers.remote.Remote.handleSocketConnection(username, room: Int ?= 0)
+
+GET        /netlogo-agentmodel.js              controllers.remote.Remote.agentModel
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file                       controllers.Assets.at(path="/public", file)

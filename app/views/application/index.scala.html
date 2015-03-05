@@ -1,0 +1,35 @@
+@views.html.core.component.mainTheme {
+
+    <div class="alert-message block-message info" style="margin: 0 10%;">
+      <div style="display: flex; display: -webkit-box; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;">
+
+        <div style="flex: 3; -webkit-box-flex: 3; line-height: 18px; text-align: justify; font-size: 16px; padding-right: 3%;">
+          Also available here on Galapagos is the project we're calling "Teletortoise".
+          <a href="@controllers.remote.routes.Remote.index()">Teletortoise</a> has so far received less attention from us,
+          but it is a project that runs a version of classic NetLogo remotely on the Galapagos server, using the browser only as
+          a means of displaying the model's state.  Teletortoise allows numerous users to simultaneously interact with it in a
+          HubNet-like way, and, since it reuses classic desktop NetLogo, it's already fast and fully-featured.
+          <br><br>
+          The primary problem with Teletortoise, though, is that it doesn't really scale well for us.  Currently, the server can
+          only run one Teletortoise session at a time, but, even if it could run more, it would be quite expensive for us to be
+          essentially be supplying machines for everyone's models to run on.  While we're pretty certain that Tortoise
+          is the NetLogo of the future, Teletortoise's fate is yet to be determined.
+          <br><br>
+          If you run into problems, feel free to open a ticket with us on
+          GitHub <a href="https://github.com/NetLogo/Teletortoise/issues/new">here</a>.
+        </div>
+
+        <div class="rounded" style="flex: 1; -webkit-box-flex: 1; font-size: 20px;">
+          <div class="spacious-entry background_backgrounded" style="font-weight: bold; color: white; border: 3px solid #343434;
+              border-bottom: 0; border-top-right-radius: 10px; border-top-left-radius: 10px;">Quick Links</div>
+          <ul style="list-style-type: none; margin: -3px 0 0 0; padding-top: 8px; padding-bottom: 8px; color: #343434;
+              border: 3px solid  #343434; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+            <li class="spacious-entry"><a href="@controllers.remote.routes.Remote.index()">Teletortoise</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+}
+
